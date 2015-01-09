@@ -305,7 +305,7 @@
     mrelease(_monthScrollViewContainer);
     _selectedDate = [[NSDate date] retain];
     
-    _objectPool = [[ESObjectPool staticObjectPool] retain];
+    _objectPool = [[ESObjectPool dynamicObjectPool] retain];
     _monthViews = [[NSMutableDictionary alloc] init];
     
     _monthIndicatorFont = [[UIFont boldSystemFontOfSize:17] retain];
